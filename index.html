@@ -7,6 +7,56 @@
     <title>PaintJS</title>
 </head>
 <body>
+    <!-- css는 class, JS는 id 를 쓰기로 결정 -->
+    <!-- canvas는 HTML의 한 요소인데, 다른 점은 context를 갖음,즉 픽셀을 갖음
+    Context라는 건 요소안 에서 사용자가 픽셀에 접근할 수 있는 방법임 
+    controls__range => 브러쉬 사이즈(선 굵기==너비) 조절기 -->
+    <canvas id="jsCanvas" class="canvas"></canvas>
+    <div class="controls">
+        <div class="controls__range">
+            <input 
+            type="range" 
+            id="jsRange" 
+            min="0.1" 
+            max="5.1" 
+            value="2.5" 
+            stpe="0.1" 
+            />
+        </div>
+        <div class="controls__btns">
+            <button id="jsMode">채우기</button>
+            <button id="jsSave">저장</button>
+        </div>
+        <div class="controls__colors" id="jsColors">
+            <div class="controls__color jsColor" 
+            style="background-color: #2c2c2c;">
+            </div>
+                <div class="controls__color jsColor" 
+                style="background-color: white;">
+            </div>
+                <div class="controls__color jsColor" 
+                style="background-color: #ff3b30;">
+            </div>
+                <div class="controls__color jsColor" 
+                style="background-color: #ff9500;">
+            </div>
+                <div class="controls__color jsColor" 
+                style="background-color: #ffcc00;">
+            </div>
+                <div class="controls__color jsColor" 
+                style="background-color: #4cd963;">
+            </div>
+                <div class="controls__color jsColor" 
+                style="background-color: #5ac8fa;">
+            </div>
+                <div class="controls__color jsColor" 
+                style="background-color: #0579ff;">
+            </div>
+                <div class="controls__color jsColor" 
+                style="background-color: #5856d6;">
+            </div>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
